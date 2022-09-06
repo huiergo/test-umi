@@ -1,0 +1,25 @@
+@import '../style/common.less';
+
+.@{btnPrefix} {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 15px;
+  color: @heima-ui-default-color;
+  background-color: @heima-ui-default-bg;
+  border: none;
+  border: 1px solid @heima-ui-default-border-color;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  &-highlight {
+    color: @heima-ui-highlight-color;
+    background-color: @heima-ui-highlight-bg;
+  }
+  &-disabled {
+    color: @heima-ui-disabled-color;
+    background-color: @heima-ui-disabled-bg;
+    border: 1px solid @heima-ui-disabled-border-color;
+  }
+}
